@@ -17,6 +17,13 @@ pip install flet pyinstaller
 flet pack StructMirrorPicker.py --name StructMirrorPicker --onefile
 ```
 
+##### アイコン付きで作成する場合
+```bash
+flet pack StructMirrorPicker.py --name StructMirrorPicker --onefile --icon=path/to/icon.ico
+```
+* Windowsでアイコン付きで作成する場合、Icon.icoはexeと同じフォルダに入れておく必要があります。
+* Linuxの場合、--iconの引数にpngファイルを指定することでアイコン付きで作成できます。
+
 **【解説】**
 *   `flet pack` : Fletアプリを実行ファイルにまとめるコマンドです。
 *   `StructMirrorPicker.py` : 元のPythonファイル名を指定しています。
