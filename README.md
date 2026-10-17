@@ -32,3 +32,11 @@ flet pack StructMirrorPicker.py --name StructMirrorPicker --onefile --icon=path/
 
 #### 手順3: アプリの確認
 ビルドが成功すると、先ほどの`StructMirrorPicker.py`と同じ階層に`dist`というフォルダができているはずです。その中にある`StructMirrorPicker.exe`をダブルクリックすると、ウィンドウが立ち上がり、先ほどまで使っていた操作画面（テキストボックスとボタン）が表示されるはずです。
+
+
+
+.\venv\Scripts\Activate.ps1
+
+python -m PyInstaller --onefile --windowed --name StructMirrorPickerGUI --icon icon.ico --add-data "icon.ico;." gui.py
+
+python -m PyInstaller --onefile --windowed --name StructMirrorPickerGUI --icon icon.ico --add-data "icon.ico;." --add-data "396-600x600.png;." gui.py
